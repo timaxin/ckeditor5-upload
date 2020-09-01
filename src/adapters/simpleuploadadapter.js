@@ -12,6 +12,8 @@
 import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
 import FileRepository from '../filerepository';
 import { attachLinkToDocumentation } from '@ckeditor/ckeditor5-utils/src/ckeditorerror';
+import Cookies from "js-cookie";
+
 
 /**
  * The Simple upload adapter allows uploading images to an application running on your server using
