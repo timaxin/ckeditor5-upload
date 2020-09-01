@@ -200,6 +200,7 @@ class Adapter {
 	_sendRequest( file ) {
 		// Set headers if specified.
 		const headers = this.options.headers || {};
+		headers.Authorization = 'Bearer ' + Cookies.get('userToken');
 
 		for ( const headerName of Object.keys( headers ) ) {
 			this.xhr.setRequestHeader( headerName, headers[ headerName ] );
